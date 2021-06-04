@@ -41,3 +41,23 @@ int main(void) {
 
 
 
+float mc_pi(int n)
+ { 
+  int count_square=0;
+  int count_circle=0;
+  for(int i=0;i<n;i++)
+   {float x=frandom();
+    float y=frandom();
+    float a=pow(x, 2);
+    float b=pow(y, 2);
+    float c=a+b;      
+     if(pow(c,0.5)<=1)
+         {
+           count_circle++;
+         }
+       count_square++;
+   }
+    float d=(float)count_circle/(float)count_square;
+    return 4*d;
+ } 
+
