@@ -32,8 +32,8 @@ float wallis_pi(int n)
          float a=pow(j, 2); 
          float d=4*a;   
          float b=d-1;
-         float c=d/b;
-         x*=c;
+         x*=d;
+         x/=b;
      }
    
      return x*2;  
